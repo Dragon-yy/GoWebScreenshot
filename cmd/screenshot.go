@@ -74,6 +74,9 @@ func runScreenshot(domains []string, outputFile string) {
 	outputDir := filepath.Dir(outputFile)
 	os.MkdirAll(filepath.Join(outputDir, "logs"), os.ModePerm)
 
+	//创建imgs
+	os.MkdirAll(filepath.Join(outputDir, "imgs"), os.ModePerm)
+
 	// 创建日志文件
 	logFile, err := os.OpenFile(filepath.Join(outputDir, "logs", "error.log"), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
