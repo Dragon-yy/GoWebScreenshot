@@ -1,0 +1,2 @@
+# GoWebScreenshot
+GoWebScreenshot是一个用Golang开发的命令行工具，利用chromedp库从txt文件中读取网站域名，批量进行网站截图。该工具会处理无法正常访问或获取截图的网站，并生成相应的日志文件。
